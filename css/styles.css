@@ -64,6 +64,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-left: 10em;
+    max-width: 400px;
     }
     .res,.contact,.follow {
         flex: 1;
@@ -138,6 +139,7 @@ main {
     flex: 1;
     min-height: 200px;
     text-align: center;
+    max-height: 400px;
 } 
 .paragraph-one,.info-support,.info-volunteer,.info-internship,
 .paragraph-one-e,.paragraph-two-e,.paragraph-three-e,.paragraph-four-e,.paragraph-five-e {
@@ -147,7 +149,7 @@ main {
     padding: 30px;
     padding-right: 70px;
     padding-left: 50px;
-    max-width: 600px;
+    max-width: 400px;
 } 
 .header-two {
     display: block;
