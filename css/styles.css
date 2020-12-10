@@ -1,9 +1,59 @@
-nav li {
-    display: inline-block;
+nav {
+    display: none;
 }
-nav ul {
-    padding: 0px;
+
+#hamburger-menu {
+    display: none;
+}
+li{
+    marker: none;
+}
+label {
+    padding: 1em;
+    float: right;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+#current {
+    display: block;
+    background-color: #FFF;
+    min-height: 50px;
+    font-family: 'Press Start 2P','Arial','helvetica'; 
+    padding: 10px;  
+}
+
+#logo {
+    max-width: 300px;  
+    margin: 40px auto auto 10px;
+}
+li,ul {
+    text-decoration: none;
+}
+
+.a-nav, .extra-list {
+    text-decoration: none;
+    display: block;
+    font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 50px;
+    font-size: 25px;
+    color: #000000;  
+    padding: 10px;  
+}
+.a-nav:hover,.extra-list:hover {
+      background-color: #E2F3FF;
     }
+
+.a-nav:visited, .extra-list:visited  {
+    color: #000000;
+    text-decoration: none; 
+    }  
+.extra-list  {
+    font-size: 20px;
+    } 
+
 p {
      font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
     }
@@ -27,9 +77,16 @@ h3 {
     font-size: 22px;
    } 
 
+header {
+    display: block;
+    min-height: 100px;  
+    background-color: #BBD3E8; 
+} 
+
 body {
     margin: auto;
-    min-height: 150vh;   
+    min-height: 150vh;  
+    background-color: #E2F3FF; 
 } 
 footer {
     background-color: #F2C849; 
@@ -51,7 +108,7 @@ main {
     margin: none;
 } 
 
-.info,.visit-info {   
+.visit-info,.visit-info-v {   
     display: block;
     background-color: #F2C849;
     max-width: 500px;
@@ -91,7 +148,7 @@ main {
 .block2 {
     background-color: #0F8C52;
 } 
-.info {
+.visit-info {
     display: none;
 }
 .info-mobile {
@@ -105,24 +162,21 @@ main {
     background-color: #5EADF2;
     flex: 1;
     min-height: 200px;
-    text-align: center;
 } 
+.extra-explore-2 {
+    display: none;
+}
+
 .events-index {
     display: block;
     background-color: #5EADF2;
     flex: 1;
     min-height: 600px;
-    text-align: center;
+    padding-right: 70px;
+    padding-left: 50px;
 } 
 .event2, .event3 {
     display: none;
-}
-.skisse{
-    display: block;
-    background-color: lightgray;
-    max-width: 300px;
-    min-height: 200px;
-    margin-left: 85px;
 }
 
 .button {
@@ -204,7 +258,30 @@ fieldset {
         overflow: hidden;
     }
 
- 
+     /* 
+.explore,.block1,.block2,.extra-explore-1,.extra-explore-2 {
+        transition-property: background;
+        transition-delay: 0,7s;
+        transition-duration: 2s;
+      }
+ .explore:hover {
+    background: url(images/explore.jpg);
+  }
+
+  .extra-explore-1:hover {
+    display: none;
+  }
+  .extra-explore-2:hover {
+    display: outside;
+  }
+
+  .block1:hover {
+    background: url(images/for-kids.jpg) no-repeat;
+  }
+  .block2:hover {
+    background-image: url('..images/for-teachers.jpg') no-repeat; 
+    background-size: cover;
+  }   */
 
 /*for kids mobile*/
 
@@ -237,42 +314,92 @@ fieldset {
 .paragraph-five-e {
     background-color: #F4BDC1;
 } 
-/*
-    @media only screen and (min-width: 600px) { 
+
+.picture-one,.picture-two,.picture-three,.picture-four,.picture-five{
+    max-width: 100%;
+} 
+
+@media only screen and (min-width:600px) { 
+
+} 
+
+    @media only screen and (min-width: 977px) { 
+
+
+        nav {
+            display: inline-block;
+        }
+
+        #hamburger-menu {
+            display: none;
+        }
+        
+        label {
+            display: none;
+        }
+        
+        #hamburger-menu:checked ~ nav {
+            display: none
+        }
 
         header {grid-area: header;}
         main {grid-area: main;}
+        #logo {grid-area: logo;}
+        nav {grid-area: nav;}
         .picture {grid-area: picture;}
         .explore {grid-area: explore;}
-        .info {grid-area: info;}
+        .visit-info {grid-area: visit-info;}
+        .visit-info-v {grid-area: visit-info;}
         .block1 {grid-area: block1;}
         .block2 {grid-area: block2;}
         .events-index {grid-area: events-index;}
+        .header-one {grid-area: header-one;}
+        .header-two {grid-area: header-two;}
+        .header-one-kids {grid-area: header-one-kids;}
+        .header-one-teachers {grid-area: header-one-teachers;}
+        .paragraph-one {grid-area: paragraph-one;}
+        .paragraph-two {grid-area: paragraph-two;}
+        .paragraph-one-e {grid-area: paragraph-one;}
+        .paragraph-two-e {grid-area: paragraph-two;}
+        .paragraph-three-e {grid-area: paragraph-three;}
+        .paragraph-four-e {grid-area: paragraph-four;}
+        .paragraph-five-e {grid-area: paragraph-five;}
+        .picture-one {grid-area: picture-one;}
+        .picture-two {grid-area: picture-two;}
+        .picture-three {grid-area: picture-three;}
+        .picture-four {grid-area: picture-four;}
+        .picture-five {grid-area: picture-five;}
+        .empty-block {grid-area: empty-block;}
+        .picture-two-about {grid-area: picture-two;}
+        .picture-one-about {grid-area: picture-one;}
+        .empty-block-two {grid-area: empty-block-two;}
+        .info-support {grid-area: info-support;}
+        .info-volunteer {grid-area: info-volunteer;}
+        .info-internship {grid-area: info-internship;}
+        .contact-us {grid-area: contact-us;}
+        .event1 {grid-area: event1;}
+        .event2 {grid-area: event2;}
+        .event3 {grid-area: event3;}
+        .events-head {grid-area: events-head;}
         footer {grid-area: footer;}
-        
-        
-        
-        #main-index {
+
+        main {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 1em;
+        } 
+        
+        /*index page*/
+        
+        #main-index {
             grid-template-areas: 
             'picture picture picture'
-            'explore explore info'
-            'block1 block2 info'
+            'explore explore visit-info'
+            'block1 block2 visit-info'
             'events-index events-index events-index'
             'footer footer footer'
         } 
         
-        .block1,.block2 {
-            display: block;
-        } 
-        .block1 {
-            background-color: rgb(255, 71, 71);
-        } 
-        .block2 {
-            background-color: rgb(62, 128, 36);
-        } 
         .header-img {
             max-width: 100%;
             height: auto;
@@ -282,7 +409,7 @@ fieldset {
             background-color: #5EADF2;
         } 
 
-        .info {
+        .visit-info {
             display: block;
          }
         
@@ -291,21 +418,98 @@ fieldset {
             }  
         
         .events-index {
-            display: flex;
+            display: grid;
             flex-direction: row;
+            grid-template-areas: 
+            '. events-head .'
+            'event1 event2 event3'
          }
 
-         
         .event1, .event2, .event3 {
-            display: flex;
             display: block;
             max-width: 300px;
-            grid-gap: 2em;
          }
+         .button {
+            display: none;
+         }
+
          .footer {
             display: flex;
             flex-direction: row;
          }
 
+         /* about page*/
+
+         #main-about {
+            grid-template-areas: 
+            'header-one header-one picture-one'
+            'paragraph-one paragraph-one picture-one'
+            'header-two header-two empty-block'
+            'info-support info-support contact-us'
+            'info-intership info-internship contact-us'
+            'info-volunteer info-volunteer picture-two'
+            'footer footer footer'
+        } 
+
+        .empty-block {
+            display: block;
+            background-color: #0F8C52;
+         }
+
+        /* visit page*/
+
+        #main-visit {
+            grid-template-areas: 
+            'header-one header-one visit-info'
+            'paragraph-one paragraph-one visit-info'
+            'header-two header-two empty-block'
+            'block1 block2 empty-block'
+            'footer footer footer'
+        } 
+
+        /*kids page*/
+
+        #main-kids {
+            grid-template-areas: 
+            'header-one-kids header-one-kids picture-one'
+            'paragraph-one paragraph-one picture-one'
+            'empty-block empty-block empty-block-two'
+            'footer footer footer'
+        } 
+
+        /* teacher page*/ 
+
+        #main-teachers   { 
+            grid-template-areas: 
+            'header-one-teachers header-one-teachers picture-one'
+            'paragraph-one paragraph-one picture-one'
+            'empty-block empty-block empty-block-two'
+            'footer footer footer'
+        } 
+
+        /* events page */
+
+        #main-events   { 
+            grid-template-areas: 
+            'header-one header-one header-one'
+            'paragraph-one picture-one picture-one'
+            'picture-two picture-two paragraph-two'
+            'paragraph-three picture-three picture-three'
+            'footer footer footer'
+        } 
+
+        /* exibitions page */
+        
+        #main-exibitions { 
+            grid-template-areas: 
+            'header-one header-one header-one'
+            'paragraph-one picture-one picture-one'
+            'picture-two picture-two paragraph-two'
+            'paragraph-three picture-three picture-three'
+            'picture-four picture-four paragraph-four'
+            'paragraph-five picture-five picture-five'
+            'header-two header-two header-two'
+            'footer footer footer'
+        } 
+
     }
-*/

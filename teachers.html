@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Trondheim Community Science Museum - For teachers</title>
+    <meta name="description" content="On this page you can read about what Trondheim Community 
+    Science Museum can offer for teachers and their school classes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c865d2a65.js" crossorigin="anonymous"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400;1,500&family=Stalinist+One&display=swap');
+      </style>
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body> 
     <header>
-        <nav>
-            <p>logo</p>
-            <ul>
-              <li> <a id="current" href="index.html">Home</a></li>
-              <li><a href=events.html>Events</a></li>
-              <li><a href=exibitions.html>Exibitions</a></li>
-              <li><a href=about.html>About</a></li>
-              <li><a href=visit.html>Visit us</a></li>
-          </ul>
-        </nav>
+      <a id="logo" href="index.html"><img id="logo" src="images/logo-tcsm-v3.png" 
+        alt="logo of Trondheim Community Science Museum"></a>
+      <label for="hamburger-menu"><i class="fas fa-bars fa-3x"></i></label>
+      <input type="checkbox" id="hamburger-menu">
+      <nav>  
+        <ul>
+          <li> <a class="a-nav" href="index.html">Home</a></li>
+          <li><a class="a-nav" href=events.html>Events</a></li>
+          <li><a class="a-nav" href=exibitions.html>Exibitions</a></li>
+          <li><a class="a-nav" href=about.html>About</a></li>
+          <li><a class="a-nav" id="current" href=visit.html>Visit us</a></li>
+            <li class="extra-list"><a href="kids.html">For kids</a></li>
+            <li id="current"  class="extra-list"><a href="teachers.html">For teachers</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
+    <main id="main-teachers">
         <section class="header-one-teachers">
             <h1>For teachers</h1>
         </section>
@@ -36,7 +49,7 @@
             </p>
         </section>
         <section class="picture-one">
-            <div>pic</div>
+          <img class="picture-one" src="images/teachers-v2.jpg" alt="a classroom filled with children and a teacher by the blackboard">
         </section>
         <div class="empty-block">block</div>
         <div class="empty-block-two">block</div>
@@ -57,7 +70,7 @@
             </ul>
           </div>
           <div class="follow">
-            <h3>FOLLOW US</h3>
+            <h4>FOLLOW US</h4>
             <ul>
               <li>Instagram</li>
               <li>Twitter</li>

@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Trondheim Community Science Museum - Visit us</title>
+    <meta name="description" content="On this page you can learn about opening hours, 
+    admission, accessibility, our adress and more">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c865d2a65.js" crossorigin="anonymous"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400;1,500&family=Stalinist+One&display=swap');
+      </style>
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body> 
     <header>
-        <nav>
-            <p>logo</p>
-            <ul>
-              <li> <a id="current" href="index.html">Home</a></li>
-              <li><a href=events.html>Events</a></li>
-              <li><a href=exibitions.html>Exibitions</a></li>
-              <li><a href=about.html>About</a></li>
-              <li><a href=visit.html>Visit us</a></li>
-          </ul>
-        </nav>
+      <a id="logo" href="index.html"><img id="logo" src="images/logo-tcsm-v3.png" 
+        alt="logo of Trondheim Community Science Museum"></a>
+      <label for="hamburger-menu"><i class="fas fa-bars fa-3x"></i></label>
+      <input type="checkbox" id="hamburger-menu">
+      <nav>  
+        <ul>
+          <li> <a class="a-nav" href="index.html">Home</a></li>
+          <li><a class="a-nav" href=events.html>Events</a></li>
+          <li><a class="a-nav" href=exibitions.html>Exibitions</a></li>
+          <li><a class="a-nav" href=about.html>About</a></li>
+          <li><a class="a-nav" id="current" href=visit.html>Visit us</a></li>
+            <li class="extra-list"><a href="kids.html">For kids</a></li>
+            <li class="extra-list"><a href="teachers.html">For teachers</a></li>
+        </ul>
+      </nav>
     </header>
     <main id="main-visit">
         <section class="header-one">
             <h1>Visit us!</h1>
         </section>
-        <section class="visit-info">
+        <section class="visit-info-v">
               <h3>Hours</h3>
               <ul>
                 <li>Monday: Closed</li>
@@ -77,7 +90,7 @@
          <section class="block2">
             <div><h2>For teachers</h2></div>
         </section>
-        <div class="empty-block">block</div>
+        <div class="empty-block"></div>
     </main>
     <footer>
         <section class="footer">
@@ -95,7 +108,7 @@
             </ul>
           </div>
           <div class="follow">
-            <h3>FOLLOW US</h3>
+            <h4>FOLLOW US</h4>
             <ul>
               <li>Instagram</li>
               <li>Twitter</li>
@@ -103,7 +116,7 @@
             </ul>
           </div>
         </section>
-        <p>&COPY; 2020 Trondheim Community Science Museum. All rights reserved.</p>
+        <p id="copyright">&COPY;2020 Trondheim Community Science Museum. All rights reserved.</p>
     </footer>
   </body>
 </html>
