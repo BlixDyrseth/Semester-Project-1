@@ -4,6 +4,10 @@ nav li {
 nav ul {
     padding: 0px;
     }
+ul {
+    text-align: left;
+    }
+
 
 h1, h2 {
     font-family: Arial, Helvetica, sans-serif;

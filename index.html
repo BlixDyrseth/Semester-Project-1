@@ -5,9 +5,6 @@
     <meta name="description" content="This is a webpage for the trondheim community science museum">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1c865d2a65.js" crossorigin="anonymous"></script>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400;1,500&family=Stalinist+One&display=swap');
-      </style>
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body> 
@@ -22,9 +19,9 @@
               <li><a class="a-nav" href=events.html>Events</a></li>
               <li><a class="a-nav" href=exibitions.html>Exibitions</a></li>
               <li><a class="a-nav" href=about.html>About</a></li>
-              <li><a class="a-nav" href=visit.html>Visit us</a></li>
-              <li class="extra-list"><a href="kids.html">For kids</a></li>
-              <li class="extra-list"><a href="teachers.html">For teachers</a></li>
+               <li><a class="a-nav" href=visit.html>Visit us</a></li>
+              <li><a class="a-nav" href="kids.html">For kids</a></li>
+              <li><a class="a-nav" href="teachers.html">For teachers</a></li>
           </ul>
         </nav>
     </header>
@@ -32,26 +29,21 @@
         <section class="picture">
           <img src="images/rask-test.jpg" alt="mammoth skeleton" class="header-img">
         </section>
-        <section class="explore">
+          <a class="explore" href="exibitions.html">
           <div>
               <h1 class="extra-explore-1">Explore togheter!</h1>
-              <h2 class="extra-explore-2">See our exibitions!</h2>
               </div>  
-        </section>  
-        <section class="block1">
-          <a href="kids.html">
-            <div>
+            </a> 
+           <a class="block1" href="kids.html"> 
+          <div> 
                 <h2>For kids</h2>
-            </div>
-          </a>
-        </section>
-        <section class="block2">
-          <a href="teachers.html">
+        </div>
+      </a>
+          <a class="block2" href="teachers.html">
             <div>
                 <h2>For teachers</h2>
             </div>
           </a>
-        </section>
         <section class="visit-info">
             <h3>Hours</h3>
             <ul>
@@ -79,14 +71,17 @@
             </ul>
         </section>
         <section class="info-mobile">
+          <a href="visit.html">
           <div>
             <h2>Visit us!</h2>
           </div>
+          </a>
         </section>
-        <section class="events-index">
-          <h3 class="events-head">Events</h3>
+        <section id="events-index" class="events-index">
+          <a href="events.html"><h3 class="events-head">Events</h3></a>
+          <section class="events-items">
           <section class="event1">
-            <div class="skisse">pic</div>
+            <img class="events-pic-index" src="images/event-1.jpg" alt="woman kneeling by machine">
             <h5>Visiting Professor of Aeronautics</h5>
             <h6>3. Desember 2020 </h6>
             <p id="event-info">
@@ -97,7 +92,7 @@
             </p>
           </section>
           <section class="event2">
-            <div class="skisse">pic</div>
+            <img class="events-pic-index" src="images/event-2.jpg" alt="the museum space">
             <h5>Night in the Museum</h5>
             <h6>12. Desember 2020 </h6>
             <p id="event-info">
@@ -106,8 +101,9 @@
               displays. Bring your own sleeping bag and get ready to 
               rough it as we go exploring the wonders of science.
             </p>
+          </section>
             <section class="event3">
-              <div class="skisse">pic</div>
+              <img class="events-pic-index" src="images/event-3.jpg" alt="wind turbins">
               <h5>Energetica Exhibition on Loan</h5>
               <h6>10. November 2020 to 21. February 2021</h6>
               <p id="event-info">
@@ -116,7 +112,8 @@
                 Community Science Museum.
               </p>
             </section>
-            <div class="button">See more</div>
+            </section>
+            <div><a class="button" href="events.html">See more</a></div>
           </section>
         </section>
      </main>
@@ -124,27 +121,22 @@
         <section class="footer">
             <div class="res">
               <h4>RESOURCES</h4>
-              <ul>
-                <li>Help Center</li>
+                 <p class="fot-text">Help Center</p>
               </ul>
           </div>
           <div class="contact">
             <h4>CONTACT INFO</h4>
-            <ul>
-              <li>Tlf: +47 902 76 231</li>
-              <li>Email: Hello@TCSM.com</li>
-            </ul>
+              <p class="fot-text">Tlf: +47 902 76 231</p>
+              <p class="fot-text">Email: Hello@TCSM.com</p>
           </div>
           <div class="follow">
             <h4>FOLLOW US</h4>
-            <ul>
-              <li>Instagram</li>
-              <li>Twitter</li>
-              <li>Facebook</li>
-            </ul>
+              <p class="fot-text">Instagram</p>
+              <p class="fot-text">Twitter</p>
+              <p class="fot-text">Facebook</p>
           </div>
         </section>
-        <p>&COPY; 2020 Trondheim Community Science Museum. All rights reserved.</p>
+        <p class="copyright">&COPY; 2020 Trondheim Community Science Museum. All rights reserved.</p>
     </footer>
   </body>
 </html>

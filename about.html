@@ -5,9 +5,6 @@
     <meta name="description" content="On this page you can read more about the Trondheim Community Science Museum">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1c865d2a65.js" crossorigin="anonymous"></script>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400;1,500&family=Stalinist+One&display=swap');
-      </style>
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body> 
@@ -18,13 +15,13 @@
       <input type="checkbox" id="hamburger-menu">
       <nav>  
         <ul>
-          <li> <a class="a.nav" href="index.html">Home</a></li>
-          <li><a class="a-nav" href=events.html>Events</a></li>
-          <li><a class="a-nav" href=exibitions.html>Exibitions</a></li>
-          <li><a class="a-nav" id="current"  href=about.html>About</a></li>
-          <li><a class="a-nav" href=visit.html>Visit us</a></li>
-            <li class="extra-list"><a href="kids.html">For kids</a></li>
-            <li class="extra-list"><a  href="teachers.html">For teachers</a></li>
+            <li> <a class="a-nav" href="index.html">Home</a></li>
+            <li><a class="a-nav" href=events.html>Events</a></li>
+            <li><a class="a-nav" href=exibitions.html>Exibitions</a></li>
+            <li><a id="current" class="a-nav" href=about.html>About</a></li>
+            <li><a class="a-nav" href=visit.html>Visit us</a></li>
+            <li><a class="a-nav" href="kids.html">For kids</a></li>
+            <li><a class="a-nav" href="teachers.html">For teachers</a></li>
         </ul>
       </nav>
     </header>
@@ -33,6 +30,7 @@
           <h1>About us</h1>
         </section>
         <section class="paragraph-one">
+          <h3>Welcome</h3>
          <p>
              Come join us at the Community Science Museum where 
              we’re committed to making science accessible to all.
@@ -58,12 +56,13 @@
          </p>
         </section>
         <section class="picture-one-about">
-          <img class="picture-one" src="images/about-one.jpg" alt="a girl in virutal reality headset">
+          <img class="picture-one-about" src="images/about-one-v2.jpg" alt="a girl in virutal reality headset">
         </section>
+        <img class="picture-one-smaller" src="images/about-smaller.jpg" alt="a girl in virutal reality headset">
         <section class="header-two">
             <h2>Get involved</h2>
         </section>
-        <div class="empty-block">block</div>
+        <div class="empty-block"></div>
         <section class="info-support">
             <h3>Support</h3>
             <p>
@@ -112,7 +111,7 @@
                 how you can get involved.
             </p>
         </section>
-        <section class="contact-us">
+        <section id="contact" class="contact-us">
             <h3>Contact us!</h3>
             <div class="login-box">
                 <form>
@@ -121,40 +120,36 @@
                     <input class="login-input" type="email" placeholder="Emailadress@gmail.com" 
                     name="email" id="email" class="form__input">     
                     <input class="input" type="input" name="input">
-                    <button type="submit">Send</button>
+                    <button class="button" type="submit">Send</button>
                   </fieldset>
                 </form>
               </div>
         </section>
         <section class="picture-two-about">
-          <img class="picture-two" src="images/about-two.jpg" alt="a young man looking in a microscope">
+          <img class="picture-two-about" src="images/about-two-v3.jpg" alt="a young man looking in a microscope">
         </section>
+        <img class="picture-two-smaller" src="images/about-two-smaller.jpg" alt="a young man looking in a microscope">
     </main>
     <footer>
-        <section class="footer">
-            <div class="res">
-              <h4>RESOURCES</h4>
-              <ul>
-                <li>Help Center</li>
-              </ul>
-          </div>
-          <div class="contact">
-            <h4>CONTACT INFO</h4>
-            <ul>
-              <li>Tlf: +47 902 76 231</li>
-              <li>Email: Hello@TCSM.com</li>
+      <section class="footer">
+          <div class="res">
+            <h4>RESOURCES</h4>
+               <p class="fot-text">Help Center</p>
             </ul>
-          </div>
-          <div class="follow">
-            <h4>FOLLOW US</h4>
-            <ul>
-              <li>Instagram</li>
-              <li>Twitter</li>
-              <li>Facebook</li>
-            </ul>
-          </div>
-        </section>
-        <p>&COPY; 2020 Trondheim Community Science Museum. All rights reserved.</p>
-    </footer>
-  </body>
+        </div>
+        <div class="contact">
+          <h4>CONTACT INFO</h4>
+            <p class="fot-text">Tlf: +47 902 76 231</p>
+            <p class="fot-text">Email: Hello@TCSM.com</p>
+        </div>
+        <div class="follow">
+          <h4>FOLLOW US</h4>
+            <p class="fot-text">Instagram</p>
+            <p class="fot-text">Twitter</p>
+            <p class="fot-text">Facebook</p>
+        </div>
+      </section>
+      <p class="copyright">&COPY; 2020 Trondheim Community Science Museum. All rights reserved.</p>
+  </footer>
+</body>
 </html>

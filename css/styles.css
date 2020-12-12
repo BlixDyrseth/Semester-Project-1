@@ -1,12 +1,11 @@
-nav {
-    display: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400;1,500&family=Stalinist+One&display=swap');
 
-#hamburger-menu {
-    display: none;
-}
-li{
-    marker: none;
+
+li,.res,.contact,.follow {
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ padding-top: 25px;
 }
 label {
     padding: 1em;
@@ -17,31 +16,45 @@ label {
     display: block;
 }
 
+
 #current {
     display: block;
     background-color: #FFF;
     min-height: 50px;
     font-family: 'Press Start 2P','Arial','helvetica'; 
-    padding: 10px;  
+    font-size: 17px;
+    padding: 13px 20px 7px 20px;  
 }
 
 #logo {
     max-width: 300px;  
     margin: 40px auto auto 10px;
 }
-li,ul {
-    text-decoration: none;
-}
+
+.copyright {
+    font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    padding: 40px;
+   }
 
 .a-nav, .extra-list {
     text-decoration: none;
     display: block;
     font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
     min-height: 50px;
-    font-size: 25px;
+    font-size: 22px;
     color: #000000;  
-    padding: 10px;  
+    padding: 10px 20px 10px 20px;  
 }
+
+.fot-text {
+    font-size: 15px; 
+    } 
+
+a{
+    text-decoration: none; 
+    } 
 .a-nav:hover,.extra-list:hover {
       background-color: #E2F3FF;
     }
@@ -54,15 +67,31 @@ li,ul {
     font-size: 20px;
     } 
 
-p {
+p,h4,h5,h6,li {
      font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
     }
+p,h4 {
+     font-size: 15px;
+}
+
+h5 {
+    font-size: 17px;
+    text-decoration: underline; 
+}
+.date {
+    text-decoration: none; 
+}
+
+h6 {
+    font-size: 14px;
+}
 
 h1, h2 {
     font-family: Stalinist One,'Arial','Helvetica'; 
     font-style: normal;
     font-weight: 400;
     color: white;
+    text-shadow: 2px 2px 4px #1c2544;
    }   
    h1 {
      font-size: 37px;
@@ -76,6 +105,8 @@ h3 {
     font-weight: 400;
     font-size: 22px;
    } 
+
+
 
 header {
     display: block;
@@ -95,10 +126,7 @@ footer {
 } 
 
 button {
-    background-color: #0F8C52; 
     border: none;
-    min-height: 4em;
-    min-width: 100%;
 } 
 
 main {
@@ -124,7 +152,7 @@ main {
     }
     .res,.contact,.follow {
         flex: 1;
-        list-style-type: none; 
+        flex-direction: column;
     }
     
       /*index mobile*/
@@ -139,14 +167,19 @@ main {
     display: block;
     flex: 1;
     min-height: 400px;
+    text-align: center;
 } 
 
 .block1 {
-    background-color: #F24452;
+    background-image: url(/images/for-kids.jpg);
+    background-size: cover;
+   /* background-color: #F24452;*/
 } 
 
 .block2 {
-    background-color: #0F8C52;
+    background-image: url(/images/for-teachers.jpg);
+    background-size: cover;
+   /* background-color: #0F8C52;*/
 } 
 .visit-info {
     display: none;
@@ -162,31 +195,52 @@ main {
     background-color: #5EADF2;
     flex: 1;
     min-height: 200px;
+    text-align: center;
 } 
-.extra-explore-2 {
-    display: none;
-}
 
 .events-index {
     display: block;
-    background-color: #5EADF2;
+    background-color: #C1DEF8;
     flex: 1;
     min-height: 600px;
     padding-right: 70px;
     padding-left: 50px;
 } 
-.event2, .event3 {
+.event2, .event3,.extra-explore-2,.picture-one-about,.picture-two-about,nav,#hamburger-menu {
     display: none;
 }
+.events-pic-index {
+    max-width: 300px;
+}
+
+.header-two-e {
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+    max-width: 100%;
+}
+
 
 .button {
     display: block;
     background-color: #0F8C52;
+    max-width: 450px;
+    margin-bottom: 1em;
+    padding: 1.5em;
+    text-align: center;
+}
+.button {
+    font-family: 'Press Start 2P','Arial','helvetica'; 
+    color: white;
+    display:block
+}
+
+.button:hover {
+    box-shadow: 2px 2px 4px #1c2544;
 }
 
 /* about mobile*/
 
-.header-one, .header-one-kids, .header-one-teachers {
+.header-one, .header-one-kids, .header-one-teachers, .header-two-e {
     display: block;
     background-color: #5EADF2;
     flex: 1;
@@ -199,8 +253,8 @@ main {
     flex: 1;
     min-height: auto;
     padding: 30px;
-    padding-right: 70px;
-    padding-left: 50px;
+    padding-right: 75px;
+    padding-left: 60px;
 } 
 .header-two {
     display: block;
@@ -209,28 +263,28 @@ main {
     min-height: 200px;
     text-align: center;
 } 
-.paragraph-one {
+.paragraph-one,.paragraph-three-e,.contact-us {
     background-color: #C1DEF8;
 } 
-.info-support {
+    .info-support,.paragraph-one-e,.paragraph-five-e {
     background-color: #F4BDC1;
 } 
-.info-volunteer {
+.info-volunteer,.paragraph-two-e {
     background-color: #FCE6A6;
 } 
-.info-internship {
+.info-internship,.paragraph-four-e  {
     background-color: #9FE0AE;
 } 
 .contact-us {
+    padding: 3em 4em 2em 3em;
     display: block;
-    background-color: #C1DEF8;
     flex: 1;
+    align-items: center;
 } 
 form {
     border-radius: 20px;
     text-align: center;
     flex: 1;
-    padding: 30px;
     margin: 1em;
     min-height: 450px;
     min-width: 400px;
@@ -258,47 +312,32 @@ fieldset {
         overflow: hidden;
     }
 
-     /* 
-.explore,.block1,.block2,.extra-explore-1,.extra-explore-2 {
-        transition-property: background;
-        transition-delay: 0,7s;
-        transition-duration: 2s;
-      }
- .explore:hover {
-    background: url(images/explore.jpg);
-  }
+     
 
-  .extra-explore-1:hover {
-    display: none;
-  }
-  .extra-explore-2:hover {
-    display: outside;
-  }
+/*for kids and teachers mobile*/
 
-  .block1:hover {
-    background: url(images/for-kids.jpg) no-repeat;
-  }
-  .block2:hover {
-    background-image: url('..images/for-teachers.jpg') no-repeat; 
-    background-size: cover;
-  }   */
-
-/*for kids mobile*/
-
-.header-one-kids {
+.header-one-kids,.empty-block-two {
     background-color: #F24452;
 } 
-/*for teachers mobile*/
-.header-one-teachers {
+.empty-block-k,.header-one-teachers,.empty-block-green {
     background-color: #0F8C52;
+} 
+.empty-block-blue  {
+    background-color: #5EADF2;
+} 
+
+.empty-block-blue,.empty-block,.empty-block-two,.empty-block-green {
+    min-height: 5em;
+} 
+
+.empty-block-blue,.empty-block,.empty-block-green {
+    display: none;
 } 
 
 /* for exibitions and events*/
 
-.paragraph-one-e {
-    background-color: #F4BDC1;
-} 
 
+/*
 .paragraph-two-e {
     background-color: #FCE6A6;
 } 
@@ -314,27 +353,219 @@ fieldset {
 .paragraph-five-e {
     background-color: #F4BDC1;
 } 
-
-.picture-one,.picture-two,.picture-three,.picture-four,.picture-five{
+*/
+.picture-one,.picture-two,.picture-three,.picture-four,.picture-five,.picture-one-about,
+.picture-two-about,.picture-one-smaller,.picture-two-smaller{
     max-width: 100%;
 } 
-
-@media only screen and (min-width:600px) { 
-
+.picture-one-smaller,.picture-two-smaller {
+    display: block;
 } 
 
+
+
+
+
+@media only screen and (min-width:735px) { 
+    header {grid-area: header;}
+    main {grid-area: main;}
+    #logo {grid-area: logo;}
+    nav {grid-area: nav;}
+    .picture {grid-area: picture;}
+    .explore {grid-area: explore;}
+    .visit-info {grid-area: visit-info;}
+    .visit-info-v {grid-area: visit-info;}
+    .info-mobile {grid-area: visit-info;}
+    .block1 {grid-area: block1;}
+    .block2 {grid-area: block2;}
+    .events-index {grid-area: events-index;}
+    .header-one {grid-area: header-one;}
+    .header-two {grid-area: header-two;}
+    .header-two-e {grid-area: header-two;}
+    .header-one-kids {grid-area: header-one-kids;}
+    .header-one-teachers {grid-area: header-one-teachers;}
+    .paragraph-one {grid-area: paragraph-one;}
+    .paragraph-two {grid-area: paragraph-two;}
+    .paragraph-one-e {grid-area: paragraph-one;}
+    .paragraph-two-e {grid-area: paragraph-two;}
+    .paragraph-three-e {grid-area: paragraph-three;}
+    .paragraph-four-e {grid-area: paragraph-four;}
+    .paragraph-five-e {grid-area: paragraph-five;}
+    .picture-one {grid-area: picture-one;}
+    .picture-two {grid-area: picture-two;}
+    .picture-three {grid-area: picture-three;}
+    .picture-four {grid-area: picture-four;}
+    .picture-five {grid-area: picture-five;}
+    .picture-one-smaller {grid-area: picture-one;} 
+    .picture-two-smaller {grid-area: picture-two;} 
+    .empty-block {grid-area: empty-block;}
+    .empty-block-blue {grid-area: empty-block;}
+    .empty-block-two {grid-area: empty-block-two;}
+    .empty-block-green {grid-area: empty-block;}
+    .picture-two-about {grid-area: picture-two;}
+    .picture-one-about {grid-area: picture-one;}
+    .info-support {grid-area: info-support;}
+    .info-volunteer {grid-area: info-volunteer;}
+    .info-internship {grid-area: info-internship;}
+    .contact-us {grid-area: contact-us;}
+    .event1 {grid-area: event1;}
+    .event2 {grid-area: event2;}
+    .event3 {grid-area: event3;}
+    .events-head {grid-area: events-head;}
+    footer {grid-area: footer;}
+
+     main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    } 
+
+    h1 {
+        font-size: 60px;
+    } 
+
+    h3 {
+        font-size: 20px;
+    } 
+
+    h5 {
+        font-size: 22px;
+    }
+
+    .date {
+        font-size: 18px;
+    }
+    
+    h6 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 18px;
+    } 
+
+
+    .empty-block-blue,.empty-block,.empty-block-k {
+        display: block;
+    } 
+
+    .events-head {   
+        text-align: center;
+        }
+
+    .event1,.event2 {
+        display: block;
+        max-width: 300px;
+        padding: 1em;
+     }
+     
+     .events-items {
+         display: flex;
+        flex-direction: row;
+        min-height: 600px;
+     } 
+
+     .res {
+        margin-left: 20px;
+     }
+     
+     #main-index {
+        grid-template-areas: 
+        'picture picture'
+        'explore explore'
+        'block1 block2'
+        'visit-info visit-info'
+        'events-index events-index'
+        'footer footer'
+    }  
+
+    #main-about {
+        grid-template-areas: 
+        'header-one header-one'
+        'paragraph-one paragraph-one'
+        'picture-one picture-one'
+        'header-two header-two'
+        'info-support info-support'
+        'info-internship info-internship'
+        'info-volunteer info-volunteer'
+        'contact-us contact-us'
+        'picture-two picture-two'
+        'footer footer'
+    } 
+
+    #main-visit {
+        grid-template-areas: 
+        'header-one header-one'
+        'paragraph-one visit-info'
+        'paragraph-one visit-info'
+        'block1 block2'
+        'footer footer'
+    } 
+    #main-kids {
+        grid-template-areas: 
+        'header-one-kids header-one-kids'
+        'paragraph-one picture-one'
+        'paragraph-one picture-one'
+        'empty-block empty-block-two'
+        'footer footer'
+    } 
+
+    #main-teachers {
+        grid-template-areas: 
+        'header-one-teachers header-one-teachers'
+        'paragraph-one picture-one'
+        'paragraph-one picture-one'
+        'empty-block empty-block-two'
+        'footer footer'
+    } 
+
+    #main-events   { 
+         grid-template-areas: 
+        'header-one header-one'
+        'picture-one  picture-one'
+        'paragraph-one paragraph-one'
+        'picture-two picture-two'
+        'paragraph-two paragraph-two'
+        'picture-three picture-three'
+        'paragraph-three paragraph-three'
+        'footer footer'
+        } 
+    #main-exibitions { 
+        grid-template-areas: 
+        'header-one header-one'
+        'picture-one  picture-one'
+        'paragraph-one paragraph-one'
+        'picture-two picture-two'
+        'paragraph-two paragraph-two'
+        'picture-three picture-three'
+        'paragraph-three paragraph-three'
+        'picture-four picture-four'
+        'paragraph-four paragraph-four'
+        'picture-five picture-five'
+        'paragraph-five paragraph-five'
+        'header-two header-two'
+        'footer footer'
+        } 
+} 
+
+
+    
     @media only screen and (min-width: 977px) { 
 
 
-        nav {
+        nav,    li  {
+            display: inline-block;
+        }
+
+      /*  li {
             display: inline-block;
         }
 
         #hamburger-menu {
             display: none;
-        }
+        } */
         
-        label {
+        #hamburger-menu, label {
             display: none;
         }
         
@@ -342,52 +573,15 @@ fieldset {
             display: none
         }
 
-        header {grid-area: header;}
-        main {grid-area: main;}
-        #logo {grid-area: logo;}
-        nav {grid-area: nav;}
-        .picture {grid-area: picture;}
-        .explore {grid-area: explore;}
-        .visit-info {grid-area: visit-info;}
-        .visit-info-v {grid-area: visit-info;}
-        .block1 {grid-area: block1;}
-        .block2 {grid-area: block2;}
-        .events-index {grid-area: events-index;}
-        .header-one {grid-area: header-one;}
-        .header-two {grid-area: header-two;}
-        .header-one-kids {grid-area: header-one-kids;}
-        .header-one-teachers {grid-area: header-one-teachers;}
-        .paragraph-one {grid-area: paragraph-one;}
-        .paragraph-two {grid-area: paragraph-two;}
-        .paragraph-one-e {grid-area: paragraph-one;}
-        .paragraph-two-e {grid-area: paragraph-two;}
-        .paragraph-three-e {grid-area: paragraph-three;}
-        .paragraph-four-e {grid-area: paragraph-four;}
-        .paragraph-five-e {grid-area: paragraph-five;}
-        .picture-one {grid-area: picture-one;}
-        .picture-two {grid-area: picture-two;}
-        .picture-three {grid-area: picture-three;}
-        .picture-four {grid-area: picture-four;}
-        .picture-five {grid-area: picture-five;}
-        .empty-block {grid-area: empty-block;}
-        .picture-two-about {grid-area: picture-two;}
-        .picture-one-about {grid-area: picture-one;}
-        .empty-block-two {grid-area: empty-block-two;}
-        .info-support {grid-area: info-support;}
-        .info-volunteer {grid-area: info-volunteer;}
-        .info-internship {grid-area: info-internship;}
-        .contact-us {grid-area: contact-us;}
-        .event1 {grid-area: event1;}
-        .event2 {grid-area: event2;}
-        .event3 {grid-area: event3;}
-        .events-head {grid-area: events-head;}
-        footer {grid-area: footer;}
-
         main {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 1em;
+            grid-template-columns: 1fr 1fr 1fr;
         } 
+
+        .empty-block-blue,.empty-block,.empty-block-green {
+            display: block;
+        } 
+        
         
         /*index page*/
         
@@ -416,22 +610,17 @@ fieldset {
         .info-mobile {   
             display: none;
             }  
-        
-        .events-index {
-            display: grid;
-            flex-direction: row;
+
+/*
+         #events-index {
+             display: grid;
             grid-template-areas: 
             '. events-head .'
             'event1 event2 event3'
-         }
+            '. button .'
+    
+        } */
 
-        .event1, .event2, .event3 {
-            display: block;
-            max-width: 300px;
-         }
-         .button {
-            display: none;
-         }
 
          .footer {
             display: flex;
@@ -446,7 +635,7 @@ fieldset {
             'paragraph-one paragraph-one picture-one'
             'header-two header-two empty-block'
             'info-support info-support contact-us'
-            'info-intership info-internship contact-us'
+            'info-internship info-internship contact-us'
             'info-volunteer info-volunteer picture-two'
             'footer footer footer'
         } 
@@ -512,4 +701,20 @@ fieldset {
             'footer footer footer'
         } 
 
+        .picture-two-about,.picture-one-about {
+            display: block;
+         }
+
+        .picture-one-smaller,.picture-two-smaller {
+            display: none;
+         }
+
+         @media only screen and (min-width: 1065px) { 
+            .event3 {
+                display: block;
+                max-width: 300px;
+                padding: 1em;
+             }
+
     }
+}

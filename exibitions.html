@@ -5,9 +5,6 @@
         <meta name="description" content="On this page you can learn about the regular exibitions.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/1c865d2a65.js" crossorigin="anonymous"></script>
-        <style>
-          @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400;1,500&family=Stalinist+One&display=swap');
-          </style>
         <link href="css/styles.css" rel="stylesheet">
       </head>
   <body> 
@@ -17,16 +14,16 @@
         <label for="hamburger-menu"><i class="fas fa-bars fa-3x"></i></label>
         <input type="checkbox" id="hamburger-menu">
         <nav>  
-          <ul>
-            <li> <a class="a.nav" href="index.html">Home</a></li>
-            <li><a class="a-nav" href=events.html>Events</a></li>
-            <li><a class="a-nav" id="current" href=exibitions.html>Exibitions</a></li>
-            <li><a class="a-nav" href=about.html>About</a></li>
-            <li><a class="a-nav" href=visit.html>Visit us</a></li>
-              <li class="extra-list"><a href="kids.html">For kids</a></li>
-              <li class="extra-list"><a href="teachers.html">For teachers</a></li>
-          </ul>
-        </nav>
+            <ul>
+                <li> <a class="a-nav" href="index.html">Home</a></li>
+                <li><a class="a-nav" href=events.html>Events</a></li>
+                <li><a id="current" class="a-nav" href=exibitions.html>Exibitions</a></li>
+                <li><a class="a-nav" href=about.html>About</a></li>
+                <li><a class="a-nav" href=visit.html>Visit us</a></li>
+                <li><a class="a-nav" href="kids.html">For kids</a></li>
+                <li><a class="a-nav"href="teachers.html">For teachers</a></li>
+            </ul>
+          </nav>
     </header>
     <main id="main-exibitions">
         <section class="header-one">
@@ -117,7 +114,7 @@
             </p>
         </section>
         <section class="picture-five">
-            <div>pic</div>
+            <img class="picture-five" src="images/robot.jpg" alt="a robot with a friendly face">
         </section>
         <section class="paragraph-five-e">
             <h3>Robotics and AI</h3>
@@ -131,38 +128,33 @@
                 and shake the hand of Rob the Robot.
             </p>
         </section>
-        <section class="header-two">
+        <section class="header-two-e">
             <div>
-                <h2>We also have special events and exhibitions!</h2> 
+                <h2 class="see-events">We also have special events and exhibitions!</h2> 
             </div>
-            <button>See more</button>
+            <div><a class="button" href="events.html">See more</a></div>
         </section>
     </main>
     <footer>
         <section class="footer">
             <div class="res">
               <h4>RESOURCES</h4>
-              <ul>
-                <li>Help Center</li>
+                 <p class="fot-text">Help Center</p>
               </ul>
           </div>
           <div class="contact">
             <h4>CONTACT INFO</h4>
-            <ul>
-              <li>Tlf: +47 902 76 231</li>
-              <li>Email: Hello@TCSM.com</li>
-            </ul>
+              <p class="fot-text">Tlf: +47 902 76 231</p>
+              <p class="fot-text">Email: Hello@TCSM.com</p>
           </div>
           <div class="follow">
             <h4>FOLLOW US</h4>
-            <ul>
-              <li>Instagram</li>
-              <li>Twitter</li>
-              <li>Facebook</li>
-            </ul>
+              <p class="fot-text">Instagram</p>
+              <p class="fot-text">Twitter</p>
+              <p class="fot-text">Facebook</p>
           </div>
         </section>
-        <p>&COPY; 2020 Trondheim Community Science Museum. All rights reserved.</p>
+        <p class="copyright">&COPY; 2020 Trondheim Community Science Museum. All rights reserved.</p>
     </footer>
   </body>
 </html>
