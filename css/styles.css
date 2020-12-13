@@ -16,6 +16,14 @@ label {
     display: block;
 }
 
+.event1,.event2,.event3 {
+    margin: 0 auto;
+}
+
+.events-head {   
+    text-align: center;
+    padding-bottom: 1em;
+    }
 
 #current {
     display: block;
@@ -55,11 +63,17 @@ label {
 a{
     text-decoration: none; 
     } 
+
 .a-nav:hover,.extra-list:hover {
       background-color: #E2F3FF;
     }
 
-.a-nav:visited, .extra-list:visited  {
+.visit-text {
+    font-size: 15px; 
+    } 
+
+
+.a-nav:visited, .extra-list:visited,a:visited  {
     color: #000000;
     text-decoration: none; 
     }  
@@ -219,19 +233,20 @@ main {
     max-width: 100%;
 }
 
-
 .button {
     display: block;
     background-color: #0F8C52;
     max-width: 450px;
-    margin-bottom: 1em;
     padding: 1.5em;
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1em;
 }
-.button {
+.button,.button:visited {
     font-family: 'Press Start 2P','Arial','helvetica'; 
     color: white;
-    display:block
+    display:block;
+    text-decoration: #fff;
 }
 
 .button:hover {
@@ -424,6 +439,10 @@ fieldset {
         font-size: 60px;
     } 
 
+    h2 {
+        font-size: 50px;
+    } 
+
     h3 {
         font-size: 20px;
     } 
@@ -445,13 +464,13 @@ fieldset {
     } 
 
 
-    .empty-block-blue,.empty-block,.empty-block-k {
+    .empty-block-blue,.empty-block,.empty-block-green {
         display: block;
     } 
 
     .events-head {   
-        text-align: center;
-        }
+        font-size: 25px;
+        } 
 
     .event1,.event2 {
         display: block;
