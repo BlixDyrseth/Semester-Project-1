@@ -26,6 +26,10 @@ label {
     padding-bottom: 1em;
     }
 
+.events-head:hover {   
+    text-decoration: underline;
+    }
+
 #current {
     display: block;
     background-color: #FFF;
@@ -47,7 +51,7 @@ label {
     padding: 40px;
    }
 
-.a-nav, .extra-list {
+.a-nav {
     text-decoration: none;
     display: block;
     font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
@@ -65,7 +69,7 @@ a{
     text-decoration: none; 
     } 
 
-.a-nav:hover,.extra-list:hover {
+.a-nav:hover {
       background-color: #E2F3FF;
     }
 
@@ -141,6 +145,7 @@ footer {
 } 
 
 button {
+    min-width: 350px;
     border: none;
 } 
 
@@ -196,9 +201,7 @@ main {
     background-size: cover;
    /* background-color: #0F8C52;*/
 } 
-.visit-info {
-    display: none;
-}
+
 .info-mobile {
     flex: 1;
     background-color: #F2C849;
@@ -221,7 +224,7 @@ main {
     padding-right: 70px;
     padding-left: 50px;
 } 
-.event2, .event3,.extra-explore-2,.picture-one-about,.picture-two-about,nav,#hamburger-menu {
+.event2, .event3,.extra-explore-2,.picture-one-about,.picture-two-about,nav,#hamburger-menu,.visit-info {
     display: none;
 }
 .events-pic-index {
@@ -256,7 +259,7 @@ main {
 
 /* about mobile*/
 
-.header-one, .header-one-kids, .header-one-teachers, .header-two-e {
+.header-one, .header-one-kids, .header-one-teachers, .header-two-e,.header-two {
     display: block;
     background-color: #5EADF2;
     flex: 1;
@@ -272,17 +275,11 @@ main {
     padding-right: 75px;
     padding-left: 60px;
 } 
-.header-two {
-    display: block;
-    background-color: #F24452;
-    flex: 1;
-    min-height: 200px;
-    text-align: center;
-} 
+
 .paragraph-one,.paragraph-three-e,.contact-us {
     background-color: #C1DEF8;
 } 
-    .info-support,.paragraph-one-e,.paragraph-five-e {
+.info-support,.paragraph-one-e,.paragraph-five-e {
     background-color: #F4BDC1;
 } 
 .info-volunteer,.paragraph-two-e {
@@ -301,7 +298,7 @@ form {
     border-radius: 20px;
     text-align: center;
     flex: 1;
-    margin: 1em;
+    margin: 1em auto;
     min-height: 450px;
     min-width: 400px;
 }
@@ -332,10 +329,10 @@ fieldset {
 
 /*for kids and teachers mobile*/
 
-.header-one-kids,.empty-block-two {
+.header-one-kids,.empty-block-two,.header-two {
     background-color: #F24452;
 } 
-.empty-block-k,.header-one-teachers,.empty-block-green {
+.empty-block-k,.empty-block,.header-one-teachers,.empty-block-green {
     background-color: #0F8C52;
 } 
 .empty-block-blue  {
@@ -353,23 +350,6 @@ fieldset {
 /* for exibitions and events*/
 
 
-/*
-.paragraph-two-e {
-    background-color: #FCE6A6;
-} 
-
-.paragraph-three-e {
-    background-color: #C1DEF8;
-} 
-
-.paragraph-four-e {
-    background-color: #9FE0AE;
-} 
-
-.paragraph-five-e {
-    background-color: #F4BDC1;
-} 
-*/
 .picture-one,.picture-two,.picture-three,.picture-four,.picture-five,.picture-one-about,
 .picture-two-about,.picture-one-smaller,.picture-two-smaller{
     max-width: 100%;
@@ -488,6 +468,12 @@ fieldset {
      .res {
         margin-left: 20px;
      }
+
+     .footer {
+        display: flex;
+        flex-direction: row;
+     }
+     
      
      #main-index {
         grid-template-areas: 
@@ -639,13 +625,12 @@ fieldset {
             'event1 event2 event3'
             '. button .'
     
-        } */
-
+        } 
 
          .footer {
             display: flex;
             flex-direction: row;
-         }
+         } */
 
          /* about page*/
 
@@ -660,11 +645,7 @@ fieldset {
             'footer footer footer'
         } 
 
-        .empty-block {
-            display: block;
-            background-color: #0F8C52;
-         }
-
+    
         /* visit page*/
 
         #main-visit {
