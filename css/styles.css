@@ -308,7 +308,6 @@ input {
     margin: 1em;
 } 
 .input {
-    width: 100%;
     min-height: 350px;  
 } 
 fieldset {
@@ -563,13 +562,6 @@ fieldset {
             display: inline-block;
         }
 
-      /*  li {
-            display: inline-block;
-        }
-
-        #hamburger-menu {
-            display: none;
-        } */
         
         #hamburger-menu, label {
             display: none;
@@ -613,26 +605,10 @@ fieldset {
             display: block;
          }
         
-        .info-mobile {   
+        .info-mobile,.picture-one-smaller,.picture-two-smaller  {   
             display: none;
             }  
 
-/*
-         #events-index {
-             display: grid;
-            grid-template-areas: 
-            '. events-head .'
-            'event1 event2 event3'
-            '. button .'
-    
-        } 
-
-         .footer {
-            display: flex;
-            flex-direction: row;
-         } */
-
-         /* about page*/
 
          #main-about {
             grid-template-areas: 
@@ -706,9 +682,6 @@ fieldset {
             display: block;
          }
 
-        .picture-one-smaller,.picture-two-smaller {
-            display: none;
-         }
 
          @media only screen and (min-width: 1065px) { 
             .event3 {
