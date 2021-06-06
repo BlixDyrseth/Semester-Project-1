@@ -9,27 +9,26 @@
   </head>
   <body> 
     <header>
-            <a id="logo" href="index.html"><img id="logo" src="images/logo-tcsm-v3.png" 
-              alt="logo of Trondheim Community Science Museum"></a>
-      <label for="hamburger-menu"><i class="fas fa-bars fa-3x"></i></label>
-      <input type="checkbox" id="hamburger-menu">
-      <nav>  
-        <ul>
-            <li> <a class="a-nav" href="index.html">Home</a></li>
-            <li><a class="a-nav" href=events.html>Events</a></li>
-            <li><a class="a-nav" href=exibitions.html>Exibitions</a></li>
-            <li><a class="a-nav" href=about.html>About</a></li>
-            <li><a class="a-nav" href=visit.html>Visit us</a></li>
-            <li><a id="current" class="a-nav" href="kids.html">For kids</a></li>
-            <li><a class="a-nav" href="teachers.html">For teachers</a></li>
-        </ul>
-      </nav>
+      <a id="logo" href="index.html"><img class="logo" src="images/logo-tcsm-v3.png" 
+        alt="logo of Trondheim Community Science Museum"></a>
+        <label class="hamburger-menu" for="hamburger-menu"><i class="fas fa-bars fa-3x"></i></label>
+        <input type="checkbox" id="hamburger-menu">
+        <nav>  
+           <div class="nav-container">
+             <a class="a-nav"  href="index.html">Home</a>
+             <a class="a-nav" href=events.html>Events</a>
+             <a class="a-nav" href=exibitions.html>Exibitions</a>
+              <a class="a-nav" href=about.html>About</a>
+              <a class="a-nav" id="current" href=visit.html>Visit us</a>
+            </div>
+        </nav>
     </header>
-    <main id="main-kids">
+    <main class="main-kids">
         <section class="header-one-kids">
             <h1>For kids</h1>
         </section>
         <section class="paragraph-one">
+          <div class="text-box">
           <h3>Hello!</h3>
             <p>
                 Are you a young person looking to learn more about science? 
@@ -54,6 +53,7 @@
             <p>
                 To find out more about the holiday club and how you can join, send us a message.
             </p>
+            </div>
         </section>
         <section class="picture-one">
           <img class="picture-one" src="images/kids.jpg" alt="a young child reading a book with a drawn background with rockets and plantes">

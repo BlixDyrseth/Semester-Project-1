@@ -9,23 +9,21 @@
   </head>
   <body> 
     <header>
-      <a id="logo" href="index.html"><img id="logo" src="images/logo-tcsm-v3.png" 
+      <a id="logo" href="index.html"><img class="logo" src="images/logo-tcsm-v3.png" 
         alt="logo of Trondheim Community Science Museum"></a>
-      <label for="hamburger-menu"><i class="fas fa-bars fa-3x"></i></label>
+      <label class="hamburger-menu" for="hamburger-menu"><i class="fas fa-bars fa-3x"></i></label>
       <input type="checkbox" id="hamburger-menu">
-      <nav>  
-        <ul>
-            <li> <a class="a-nav" href="index.html">Home</a></li>
-            <li><a id="current" class="a-nav" href=events.html>Events</a></li>
-            <li><a class="a-nav" href=exibitions.html>Exibitions</a></li>
-            <li><a class="a-nav" href=about.html>About</a></li>
-            <li><a class="a-nav" href=visit.html>Visit us</a></li>
-            <li><a class="a-nav" href="kids.html">For kids</a></li>
-            <li><a class="a-nav" href="teachers.html">For teachers</a></li>
-        </ul>
+        <nav>  
+          <div class="nav-container">
+            <a class="a-nav" href="index.html">Home</a>
+            <a class="a-nav" id="current" href=events.html>Events</a>
+            <a class="a-nav" href=exibitions.html>Exibitions</a>
+             <a class="a-nav" href=about.html>About</a>
+             <a class="a-nav" href=visit.html>Visit us</a>
+           </div>
       </nav>
     </header>
-    <main id="main-events">
+    <main class="main-events">
         <section class="header-one">
             <h1>Special Events And Exhibitions</h1>
         </section>
@@ -33,6 +31,7 @@
           <img class="picture-one" src="images/event-1.jpg" alt="woman kneeling by machine">
         </section>
         <section class="paragraph-one-e">
+          <div class="text-box">
             <h3>Visiting Professor of Aeronautics</h3>
             <h5 class="date">3. Desember 2020 </h5>
             <p>
@@ -41,11 +40,13 @@
                 delivering 3 lectures on the development of aeronautics 
                 and where the future lies in this exciting ‘space’. 
             </p>
+            </div>
         </section>
         <section class="picture-two">
           <img class="picture-two" src="images/event-2.jpg" alt="the museum space">
       </section>
         <section class="paragraph-two-e">
+          <div class="text-box">
             <h3>Night in the Museum</h3>
             <h5 class="date">12. Desember 2020 </h5>
             <p>
@@ -54,11 +55,13 @@
                 Bring your own sleeping bag and get ready to rough it as we go 
                 exploring the wonders of science.
             </p>
+          </div>
         </section>
         <section class="picture-three">
           <img class="picture-three" src="images/event-3.jpg" alt="wind turbins">
       </section>
         <section class="paragraph-three-e">
+          <div class="text-box">
             <h3>Energetica Exhibition on Loan</h3>
             <h5 class="date">10. November 2020 to 21. February 2021</h5>
             <p>
@@ -69,6 +72,7 @@
                 lighting, to ‘Wind Island’ that shows how turbines are able to use 
                 and control wind to create power.
             </p>
+          </div>
         </section>
     </main>
     <footer>

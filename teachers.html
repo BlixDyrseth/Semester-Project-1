@@ -10,27 +10,26 @@
   </head>
   <body> 
     <header>
-      <a id="logo" href="index.html"><img id="logo" src="images/logo-tcsm-v3.png" 
+      <a id="logo" href="index.html"><img class="logo" src="images/logo-tcsm-v3.png" 
         alt="logo of Trondheim Community Science Museum"></a>
-      <label for="hamburger-menu"><i class="fas fa-bars fa-3x"></i></label>
+      <label class="hamburger-menu" for="hamburger-menu"><i class="fas fa-bars fa-3x"></i></label>
       <input type="checkbox" id="hamburger-menu">
       <nav>  
-        <ul>
-            <li> <a class="a-nav" href="index.html">Home</a></li>
-            <li><a class="a-nav" href=events.html>Events</a></li>
-            <li><a class="a-nav" href=exibitions.html>Exibitions</a></li>
-            <li><a class="a-nav" href=about.html>About</a></li>
-            <li><a class="a-nav" href=visit.html>Visit us</a></li>
-            <li><a class="a-nav" href="kids.html">For kids</a></li>
-            <li><a id="current" class="a-nav"href="teachers.html">For teachers</a></li>
-        </ul>
+        <div class="nav-container">
+          <a class="a-nav" href="index.html">Home</a>
+          <a class="a-nav" href=events.html>Events</a>
+          <a class="a-nav" href=exibitions.html>Exibitions</a>
+           <a class="a-nav" href=about.html>About</a>
+           <div class="a-nav" id="current" href=visit.html>Visit us</div>
+         </div>
       </nav>
     </header>
-    <main id="main-teachers">
+    <main class="main-teachers">
         <section class="header-one-teachers">
             <h1>For teachers</h1>
         </section>
         <section class="paragraph-one">
+          <div class="text-box">
           <h3>A place of learning</h3>
             <p>
                 As a community-driven museum, we want to work with schools to create 
@@ -45,6 +44,7 @@
                 Please get in touch with us here to find out more about our facilities 
                 and to arrange a time to bring your students through for a visit.
             </p>
+            </div>
         </section>
         <section class="picture-one">
           <img class="picture-one" src="images/teachers-v3.jpg" alt="a classroom filled with children and a teacher by the blackboard">

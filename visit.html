@@ -10,23 +10,21 @@
   </head>
   <body> 
     <header>
-      <a id="logo" href="index.html"><img id="logo" src="images/logo-tcsm-v3.png" 
+      <a id="logo" href="index.html"><img class="logo" src="images/logo-tcsm-v3.png" 
         alt="logo of Trondheim Community Science Museum"></a>
-      <label for="hamburger-menu"><i class="fas fa-bars fa-3x"></i></label>
-      <input type="checkbox" id="hamburger-menu">
-      <nav>  
-        <ul>
-            <li> <a class="a-nav" href="index.html">Home</a></li>
-            <li><a class="a-nav" href=events.html>Events</a></li>
-            <li><a class="a-nav" href=exibitions.html>Exibitions</a></li>
-            <li><a class="a-nav" href=about.html>About</a></li>
-            <li><a id="current" class="a-nav" href=visit.html>Visit us</a></li>
-            <li><a class="a-nav" href="kids.html">For kids</a></li>
-            <li><a class="a-nav" href="teachers.html">For teachers</a></li>
-        </ul>
-      </nav>
+      <label class="hamburger-menu" for="hamburger-menu"><i class="fas fa-bars fa-3x"></i></label>
+      <input type="checkbox" id="hamburger-menu"> 
+        <nav>  
+          <div class="nav-container">
+            <a class="a-nav" href="index.html">Home</a>
+            <a class="a-nav" href=events.html>Events</a>
+            <a class="a-nav" href=exibitions.html>Exibitions</a>
+             <a class="a-nav" href=about.html>About</a>
+             <div class="a-nav" id="current" href=visit.html>Visit us</div>
+           </div>
+       </nav>
     </header>
-    <main id="main-visit">
+    <main class="main-visit">
         <section class="header-one">
             <h1>Visit us!</h1>
         </section>
@@ -49,6 +47,7 @@
                 It also has braille display signs for the visually impaired</p>
           </section>
         <section class="paragraph-one">
+          <div class="text-box">
             <h3>Food and drink</h3>
             <p>
                 There is a café attached to the museum 
@@ -72,6 +71,7 @@
                 If you would like to organize a guided tour for your group of 
                 6 or more people, please contact us to arrange the tour.
             </p>
+            </div>
         </section>
         <a class="block1" href="kids.html"> 
             <div>
