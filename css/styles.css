@@ -291,7 +291,7 @@ nav,
   display: none;
 }
 .events-pic-index {
-  max-width: 300px;
+  max-width: 100%;
 }
 
 .header-two-e {
